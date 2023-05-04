@@ -1,0 +1,9 @@
+---
+title: "Linear Algebra stuff"
+subtitle: My notes on Linear Algebra
+page-layout: article
+---
+
+Articles about Linear Algebra and related topics.
+
+[Linear Algebra : Introduction](./intro_to_linear_algebra.qmd)

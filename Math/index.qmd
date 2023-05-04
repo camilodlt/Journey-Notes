@@ -1,0 +1,9 @@
+---
+title: "The math section"
+subtitle: My notes on Linear Algebra, Calculus and Optimization
+page-layout: article
+---
+
+Articles and notes about math stuff. 
+
+[Linear Algebra](./linear_algebra/index.qmd)

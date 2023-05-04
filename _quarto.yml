@@ -4,10 +4,23 @@ project:
 website:
   title: "Journey Notes"
   navbar:
+    search : true
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href : about.qmd
+        text : About
+  sidebar:
+    style: "docked"
+    search: true
+    contents: 
+      - section: "Math"
+        contents:
+          - ./Math/index.qmd
+          - section: "Linear Algebra"
+            contents: 
+              - ./Math/linear_algebra/intro_to_linear_algebra.qmd
+
 
 format:
   html:
