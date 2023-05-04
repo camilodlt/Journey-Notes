@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "~/miniconda3/bin/python",
+  "quarto.render.renderOnSave": true,
+  "quarto.render.previewType": "external",
+  "quarto.visualEditor.lineNumbers": true
+}
