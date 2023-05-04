@@ -2,14 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://camilodlt.github.io/Journey-Notes/index.html</loc>
-    <lastmod>2023-05-04T17:09:07.572Z</lastmod>
+    <lastmod>2023-05-04T17:50:55.541Z</lastmod>
   </url>
   <url>
     <loc>https://camilodlt.github.io/Journey-Notes/about.html</loc>
-    <lastmod>2023-05-04T17:09:07.888Z</lastmod>
+    <lastmod>2023-05-04T17:50:55.797Z</lastmod>
   </url>
   <url>
-    <loc>https://camilodlt.github.io/Journey-Notes/Math/intro_to_linear_algebra.html</loc>
-    <lastmod>2023-05-04T17:09:08.260Z</lastmod>
+    <loc>https://camilodlt.github.io/Journey-Notes/Math/linear_algebra/index.html</loc>
+    <lastmod>2023-05-04T17:50:56.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camilodlt.github.io/Journey-Notes/Math/linear_algebra/intro_to_linear_algebra.html</loc>
+    <lastmod>2023-05-04T17:50:56.317Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camilodlt.github.io/Journey-Notes/Math/index.html</loc>
+    <lastmod>2023-05-04T17:50:56.649Z</lastmod>
   </url>
 </urlset>
