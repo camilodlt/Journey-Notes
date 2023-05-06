@@ -151,6 +151,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Introduction to linear algebra</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Math/linear_algebra/Elements and operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scalars, Vectors and Matrices</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -168,6 +174,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction-to-linear-algebra" id="toc-introduction-to-linear-algebra" class="nav-link active" data-scroll-target="#introduction-to-linear-algebra">Introduction to linear algebra</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#what-is-a-linear-operation-then" id="toc-what-is-a-linear-operation-then" class="nav-link" data-scroll-target="#what-is-a-linear-operation-then">What is a <em>linear operation</em> then …</a>
+  <ul class="collapse">
+  <li><a href="#some-examples-of-linear-maps-or-linear-operations" id="toc-some-examples-of-linear-maps-or-linear-operations" class="nav-link" data-scroll-target="#some-examples-of-linear-maps-or-linear-operations">Some examples of <em>linear maps</em> or <em>linear operations</em>:</a></li>
+  <li><a href="#some-examples-of-non-linear-maps-because-they-are-not-operation-preserving" id="toc-some-examples-of-non-linear-maps-because-they-are-not-operation-preserving" class="nav-link" data-scroll-target="#some-examples-of-non-linear-maps-because-they-are-not-operation-preserving">Some examples of non linear maps (because they are not <em>operation preserving</em>) :</a></li>
+  </ul></li>
+  <li><a href="#and-a-vector-space" id="toc-and-a-vector-space" class="nav-link" data-scroll-target="#and-a-vector-space">And a Vector Space</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -184,7 +196,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>What is Linear Algebra ?</p>
 <p><strong>Linear Algebra</strong> is the study of <strong>linear operations</strong> on <strong>vector spaces</strong>.</p>
-<p>What is a <em>linear operation</em> then …</p>
+</section>
+<section id="what-is-a-linear-operation-then" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-linear-operation-then">What is a <em>linear operation</em> then …</h2>
 <p>Let <span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span> be vector spaces. A function <span class="math inline">\(f: V \rightarrow W\)</span> is a <strong>linear map</strong> if for any two vectors <span class="math inline">\(\textbf{u}\)</span> and <span class="math inline">\(\textbf{v}\)</span> the mapping is <em>operation preserving</em>, that is, it satisfies these conditions:</p>
 <ul>
 <li><p><em>Additivity</em> : <span class="math inline">\(f(\textbf{u} + \textbf{v}) = f(\textbf{u}) + f(\textbf{v})\)</span></p></li>
@@ -214,6 +228,53 @@ ul.task-list li input[type="checkbox"] {
     \lambda * f(\textbf{b} ) = 2 * [3,1] = [6,2]
 \end{array}
 \]</span></p>
+<section id="some-examples-of-linear-maps-or-linear-operations" class="level3">
+<h3 class="anchored" data-anchor-id="some-examples-of-linear-maps-or-linear-operations">Some examples of <em>linear maps</em> or <em>linear operations</em>:</h3>
+<ul>
+<li><span class="math inline">\(\textbf{v} \rightarrow c\textbf{v}\)</span> with an scalar c centered in the origin of the vector space of <span class="math inline">\(\textbf{v}\)</span></li>
+<li>The identiy operation</li>
+<li><span class="math inline">\(\textbf{x} \rightarrow A\textbf{x}\)</span>. With <span class="math inline">\(\textbf{x} \in \mathbb{R}^n \text{ (column vector)}\)</span> and <span class="math inline">\(A\)</span> a (<span class="math inline">\(m * n\)</span>) matrix.</li>
+</ul>
+<p><strong>A matrix can be seen as a series of linear operations</strong>, for example, the scaling matrix: <span class="math display">\[
+A = \begin{bmatrix}
+3 &amp; 0\\
+0 &amp; 3
+\end{bmatrix}
+\]</span> Can be seen as : <span class="math display">\[
+A = \begin{bmatrix}
+f_{1}\\
+f_{2}
+\end{bmatrix}
+\]</span></p>
+<p>With : <span class="math inline">\(f_{1}(a,b) = 3*a + 0*b\)</span> and <span class="math inline">\(f_{2}(a,b) = 0*a + 3*b\)</span></p>
+<p>For the vector <span class="math inline">\(\textbf{c} = [2,1]\)</span>. The operation <span class="math inline">\(A\textbf{c}\)</span> would yield : <span class="math display">\[
+A\textbf{c} = \begin{bmatrix}
+f_{1}(\textbf{c})\\
+f_{2}(\textbf{c})
+\end{bmatrix}  = \begin{bmatrix}
+f_{1}(2,1)\\
+f_{2}(2,1)
+\end{bmatrix} = \begin{bmatrix}
+3*2 + 0 * 1 \\
+0*2 + 3 * 1
+\end{bmatrix} = \begin{bmatrix}
+6 \\
+3
+\end{bmatrix}
+\]</span></p>
+</section>
+<section id="some-examples-of-non-linear-maps-because-they-are-not-operation-preserving" class="level3">
+<h3 class="anchored" data-anchor-id="some-examples-of-non-linear-maps-because-they-are-not-operation-preserving">Some examples of non linear maps (because they are not <em>operation preserving</em>) :</h3>
+<ul>
+<li><span class="math inline">\(x \rightarrow x²\)</span></li>
+<li><span class="math inline">\(x \rightarrow x + 1\)</span></li>
+</ul>
+</section>
+</section>
+<section id="and-a-vector-space" class="level2">
+<h2 class="anchored" data-anchor-id="and-a-vector-space">And a Vector Space</h2>
+<p>A <em>Vector space</em> is a <strong>set of vectors</strong> that support addition and scaling.</p>
+<p>For example, the set of all <em>Cartesian Coordinates</em> : <span class="math inline">\(\text{ any } \textbf{v} \in \mathbb{R}²\)</span> with respect to the same origin ([0,0] for example).</p>
 
 
 </section>
